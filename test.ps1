@@ -1,0 +1,2 @@
+Import-Module ADDSDeployment  
+Install-ADDSDomainController -Credential (Get-Credential) -CriticalReplicationOnly:$false -LogPath "C:\Windows\NTDS" -DatabasePath "C:\Windows\NTDS" -SYSVOLPath "C:\Windows\SYSVOL" 
